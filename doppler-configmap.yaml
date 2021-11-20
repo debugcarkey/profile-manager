@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  DOPPLER_PROJECT: profile-manager
+  DOPPLER_TOKEN: dp.st.dev_dkarki.3Ba7HSVU2pR6dIXe6kLTM1JOhUeVDYRL2VuEjdLyR5P
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: profile-doppler
+  name: doppler

@@ -1,0 +1,16 @@
+profileManager:
+  deployment:
+    replicaCount: 1
+    service:
+      internalPort: 80
+    image:
+      repository: ${DOCKER_REPOSITORY}
+      pullPolicy: IfNotPresent
+
+  secrets:
+      doppler: 
+          name: doppler-secret
+          encrypt: true
+          data:
+              DOPPLER_PROJECT: ${DOPPLER_PROJECT}
+              DOPPLER_TOKEN: ${DOPPLER_SECRET}
