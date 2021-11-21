@@ -18,5 +18,5 @@ FROM base as run
 FROM base as build
 COPY . /app
 WORKDIR /app
-RUN chmod +x /app/entrypoint.sh
-ENTRYPOINT ["sh", "-c", "/app/entrypoint.sh"]
+RUN chmod +x ./entrypoint.sh
+ENTRYPOINT ["sh", "-c", "./entrypoint.sh"]
